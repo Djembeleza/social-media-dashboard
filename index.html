@@ -7,7 +7,7 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Social Media Dashboard</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -25,68 +25,120 @@
 
 <body>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+  <nav class="main-nav">
+    <hgroup>
+      <h1>Social Media Dashboard</h1>
+      <p>Total Followers: 23,004</p>
+    </hgroup>
+    <hr>
+    <div class="switch-container">
+      <div>
+        <p>Dark Mode</p>
+      </div>
+      <div>
+        <label for="" class="switch">
+          <input type="checkbox" name="" id="">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
 
-  Dark Mode
+  </nav>
+
+  <div class="container">
+    <div class="card fb">
+      <p class="username"><img src="images/icon-facebook.svg" alt="Facebook Icon" class="icon">@nathanf</p>
+      <p class="follower-number">1987</p>
+      <p class="follower-text">Followers</p>
+      <p class="follower-change up"><img src="images/icon-up.svg">12 Today</p>
+    </div>
+
+
+    <div class="card twitter">
+      <p class="username"><img src="images/icon-twitter.svg" alt="Twitter Icon" class="icon">@nathanf</p>
+      <p class="follower-number">1044</p>
+      <p class="follower-text">Followers</p>
+      <p class="follower-change up"><img src="images/icon-up.svg">99 Today</p>
+    </div>
 
 
 
-  @nathanf
-  1987
-  Followers
-  12 Today
 
-  @nathanf
-  1044
-  Followers
-  99 Today
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+    <div class="card">
+      <p class="username insta"><img src="images/icon-instagram.svg" class="icon">@realnathanf</p>
+      <p class="follower-number">11k</p>
+      <p class="follower-text">Followers</p>
+      <p class="follower-change up"><img src="images/icon-up.svg">1099 Today</p>
+    </div>
 
 
 
-  Overview - Today
 
-  Page Views
-  87
-  3%
 
-  Likes
-  52
-  2%
+    <div class="card youtube">
+      <p class="username"><img src="images/icon-youtube.svg" class="icon">Nathan F.</p>
+      <p class="follower-number">8239</p>
+      <p class="follower-text">Subscribers</p>
+      <p class="follower-change down"><img src="images/icon-down.svg">144 Today</p>
+    </div>
 
-  Likes
-  5462
-  2257%
 
-  Profile Views
-  52k
-  1375%
 
-  Retweets
-  117
-  303%
 
-  Likes
-  507
-  553%
 
-  Likes
-  107
-  19%
 
-  Total Views
-  1407
-  12%
+
+    <h2>Overview - Today</h2>
+
+    <div class="card">
+      <p>Page Views<img src="images/icon-facebook.svg"></p>
+      <p>87</p>
+      <p>3%</p>
+    </div>
+
+    <div class="card">
+      <p>Likes<img src="images/icon-facebook.svg"></p>
+      52
+      2%
+    </div>
+
+    <div class="card">
+      <p>Likes<img src="images/icon-instagram.svg"></p>
+      5462
+      2257%
+    </div>
+
+    <div class="card">
+      <p>Profile Views<img src="images/icon-instagram.svg"></p>
+      52k
+      1375%
+    </div>
+
+    <div class="card">
+      <p>Retweets<img src="images/icon-twitter.svg"></p>
+      <p>117</p>
+      <p>303%</p>
+    </div>
+
+    <div class="card">
+      <p>Likes<img src="images/icon-twitter.svg"></p>
+      <p>507</p>
+      <p>553%</p>
+    </div>
+
+    <div class="card">
+      <p>Likes<img src="images/icon-youtube.svg"></p>
+      107
+      19%
+    </div>
+
+    <div class="card">
+      <p>Total Views<img src="images/icon-youtube.svg"></p>
+      1407
+      12%
+    </div>
+  </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
