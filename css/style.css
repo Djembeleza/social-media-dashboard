@@ -4,62 +4,105 @@
     padding: 0px;
 }
 
-.main-nav {
+h1 {
+    padding: 5px;
+    margin-top: 15px;
+  }
+
+  hgroup p {
+    padding: 5px;
+  }
+
+.dark {
+    background-color: rgba(0, 0, 0, 0.8756);
+    color: white;
+  }
+
+.page-wrapper {
     display: flex;
     flex-direction: column;
-    width: 100vw;
     place-items: center;
 }
 
+
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    place-items: center;
+}
+
+.switch-container {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/* The switch - the box around the slider */
 .switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
-}
-
-.switch input {
+    margin: 8px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
     opacity: 0;
     width: 0;
     height: 0;
-}
-
-.switch-container {
-    display: flex;
-    justify-content: space-between;
-    width: 80vw;
-}
-.slider {
+  }
+  
+  /* The slider */
+  .slider {
     position: absolute;
     cursor: pointer;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: linear-gradient(yellow, blue);
     -webkit-transition: .4s;
     transition: .4s;
-
-
-}
-
-input:checked + .slider {background-color: #2196F3;}
-
-input:focus + .slider {box-shadow: 0 0 1px #2196F3;}
-
-input:checked + .slider:before {
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-}
-
-.slider.round {
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
     border-radius: 34px;
-}
-
-.slider.round:before {
+  }
+  
+  .slider.round:before {
     border-radius: 50%;
-}
+  }
 
 .container {
     display: flex;
@@ -68,12 +111,18 @@ input:checked + .slider:before {
 }
 
 .card {
-    width: 90vw;
+    width: 80vw;
     background-color: rgb(240, 240, 240);
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
+}
+
+.dark-card {
+  background-color:darkslategrey;
+  color: white;
 }
 
 .username {
@@ -117,4 +166,53 @@ input:checked + .slider:before {
 
 .youtube {
     border-top: 2px solid red;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+hgroup {
+  width: 60vw;
+
+}
+
+.switch-container {
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.switch-container > p {
+  position: absolute;
+  left: 20%;
+  top: 35%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80vw;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 18vw;
+}
+
 }

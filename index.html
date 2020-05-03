@@ -24,126 +24,136 @@
 </head>
 
 <body>
+  <div class="page-wrapper">
 
-  <nav class="main-nav">
-    <hgroup>
-      <h1>Social Media Dashboard</h1>
-      <p>Total Followers: 23,004</p>
-    </hgroup>
-    <hr>
-    <div class="switch-container">
-      <div>
+    <nav class="main-nav">
+      <hgroup>
+        <h1>Social Media Dashboard</h1>
+        <p>Total Followers: 23,004</p>
+        <hr>
+      </hgroup>
+      <div class="switch-container">
         <p>Dark Mode</p>
-      </div>
-      <div>
-        <label for="" class="switch">
-          <input type="checkbox" name="" id="">
+        <label class="switch">
+          <input type="checkbox" id="switch">
           <span class="slider round"></span>
         </label>
       </div>
+
+    </nav>
+
+    <div class="container">
+      <div class="card fb">
+        <p class="username"><img src="images/icon-facebook.svg" alt="Facebook Icon" class="icon">@nathanf</p>
+        <p class="follower-number">1987</p>
+        <p class="follower-text">Followers</p>
+        <p class="follower-change up"><img src="images/icon-up.svg"> 12 Today</p>
+      </div>
+
+
+      <div class="card twitter">
+        <p class="username"><img src="images/icon-twitter.svg" alt="Twitter Icon" class="icon">@nathanf</p>
+        <p class="follower-number">1044</p>
+        <p class="follower-text">Followers</p>
+        <p class="follower-change up"><img src="images/icon-up.svg"> 99 Today</p>
+      </div>
+
+
+      <div class="card insta">
+        <p class="username"><img src="images/icon-instagram.svg" class="icon">@realnathanf</p>
+        <p class="follower-number">11k</p>
+        <p class="follower-text">Followers</p>
+        <p class="follower-change up"><img src="images/icon-up.svg"> 1099 Today</p>
+      </div>
+
+      <div class="card youtube">
+        <p class="username"><img src="images/icon-youtube.svg" class="icon">Nathan F.</p>
+        <p class="follower-number">8239</p>
+        <p class="follower-text">Subscribers</p>
+        <p class="follower-change down"><img src="images/icon-down.svg"> 144 Today</p>
+      </div>
     </div>
-
-  </nav>
-
-  <div class="container">
-    <div class="card fb">
-      <p class="username"><img src="images/icon-facebook.svg" alt="Facebook Icon" class="icon">@nathanf</p>
-      <p class="follower-number">1987</p>
-      <p class="follower-text">Followers</p>
-      <p class="follower-change up"><img src="images/icon-up.svg">12 Today</p>
-    </div>
-
-
-    <div class="card twitter">
-      <p class="username"><img src="images/icon-twitter.svg" alt="Twitter Icon" class="icon">@nathanf</p>
-      <p class="follower-number">1044</p>
-      <p class="follower-text">Followers</p>
-      <p class="follower-change up"><img src="images/icon-up.svg">99 Today</p>
-    </div>
-
-
-
-
-
-    <div class="card">
-      <p class="username insta"><img src="images/icon-instagram.svg" class="icon">@realnathanf</p>
-      <p class="follower-number">11k</p>
-      <p class="follower-text">Followers</p>
-      <p class="follower-change up"><img src="images/icon-up.svg">1099 Today</p>
-    </div>
-
-
-
-
-
-    <div class="card youtube">
-      <p class="username"><img src="images/icon-youtube.svg" class="icon">Nathan F.</p>
-      <p class="follower-number">8239</p>
-      <p class="follower-text">Subscribers</p>
-      <p class="follower-change down"><img src="images/icon-down.svg">144 Today</p>
-    </div>
-
-
-
-
-
-
 
     <h2>Overview - Today</h2>
+    <div class="container">
 
-    <div class="card">
-      <p>Page Views<img src="images/icon-facebook.svg"></p>
-      <p>87</p>
-      <p>3%</p>
-    </div>
+      <div class="card">
+        <div class="text-image">
+          <p>Page Views</p><img src="images/icon-facebook.svg">
+        </div>
+        <p class="follower-number">87</p>
+        <p class="up"><img src="images/icon-up.svg"> 3%</p>
+      </div>
 
-    <div class="card">
-      <p>Likes<img src="images/icon-facebook.svg"></p>
-      52
-      2%
-    </div>
+      <div class="card">
+        <div class="text-image">
+          <p>Likes</p><img src="images/icon-facebook.svg">
+        </div>
+        <p class="follower-number">52</p>
+        <p class="down"><img src='images/icon-down.svg'> 2%</p>
+      </div>
 
-    <div class="card">
-      <p>Likes<img src="images/icon-instagram.svg"></p>
-      5462
-      2257%
-    </div>
+      <div class="card">
+        <div class="text-image">
+          <p>Likes</p><img src="images/icon-instagram.svg">
+        </div>
 
-    <div class="card">
-      <p>Profile Views<img src="images/icon-instagram.svg"></p>
-      52k
-      1375%
-    </div>
+        <p class="follower-number">5462</p>
+        <p class="per-change up"><img src="images/icon-up.svg"> 2257%</p>
+      </div>
 
-    <div class="card">
-      <p>Retweets<img src="images/icon-twitter.svg"></p>
-      <p>117</p>
-      <p>303%</p>
-    </div>
+      <div class="card">
+        <div class="text-image">
+          <p>Profile Views</p><img src="images/icon-instagram.svg">
+        </div>
 
-    <div class="card">
-      <p>Likes<img src="images/icon-twitter.svg"></p>
-      <p>507</p>
-      <p>553%</p>
-    </div>
+        <p class="follower-number">52k</p>
+        <p class="per-change up"><img src="images/icon-up.svg"> 1375%</p>
+      </div>
 
-    <div class="card">
-      <p>Likes<img src="images/icon-youtube.svg"></p>
-      107
-      19%
-    </div>
+      <div class="card">
+        <div>
+          <p>Retweets</p><img src="images/icon-twitter.svg">
+        </div>
+        <p class="follower-number">117</p>
+        <p class="per-change up"><img src="images/icon-up.svg"> 303%</p>
+      </div>
 
-    <div class="card">
-      <p>Total Views<img src="images/icon-youtube.svg"></p>
-      1407
-      12%
+      <div class="card">
+        <div>
+          <p>Likes</p><img src="images/icon-twitter.svg">
+        </div>
+        <p class="follower-number">507</p>
+        <p class="up"><img src="images/icon-up.svg"> 553%</p>
+      </div>
+
+      <div class="card">
+        <div>
+          <p>Likes</p>
+          <img src="images/icon-youtube.svg">
+        </div>
+
+        <p class="follower-number">107</p>
+        <p class="down"><img src='images/icon-down.svg'> 19%</p>
+      </div>
+
+      <div class="card">
+        <div>
+          <p>Total Views</p><img src="images/icon-youtube.svg">
+        </div>
+        <p class="follower-number">1407</p>
+        <p class="down"><img src='images/icon-down.svg'> 12%</p>
+      </div>
     </div>
+  </div>
   </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Djembeleza</a>.
   </div>
+
+  <script src='scripts/script.js'></script>
 </body>
 
 </html>
