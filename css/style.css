@@ -7,11 +7,17 @@
 h1 {
     padding: 5px;
     margin-top: 15px;
+    font-size: 1.8rem;
   }
 
   hgroup p {
     padding: 5px;
+
   }
+
+hr {
+  margin-bottom: 10px;
+}
 
 .dark {
     background-color: rgba(0, 0, 0, 0.8756);
@@ -40,6 +46,8 @@ h1 {
     width: 100%;
 }
 
+.text-image img {margin-top: 10px;}
+
 /* The switch - the box around the slider */
 .switch {
     position: relative;
@@ -64,7 +72,7 @@ h1 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: linear-gradient(yellow, blue);
+    background: linear-gradient(45deg,green, skyblue);
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -82,7 +90,7 @@ h1 {
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
+    background: linear-gradient(green, blue);
   }
   
   input:focus + .slider {
@@ -98,6 +106,7 @@ h1 {
   /* Rounded sliders */
   .slider.round {
     border-radius: 34px;
+    background-color: yellowgreen;
   }
   
   .slider.round:before {
@@ -112,17 +121,27 @@ h1 {
 
 .card {
     width: 80vw;
-    background-color: rgb(240, 240, 240);
+    background-color: rgba(240, 240, 240, 0.904);
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
+    cursor: pointer;
+    transition: background-color 0.8s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+
+.card:hover {
+background-color: rgba(109, 250, 53,0.1);
 }
 
 .dark-card {
-  background-color:darkslategrey;
+  background-color:rgb(47, 78, 78);
   color: white;
+}
+
+.dark-card:hover {
+  background-color: rgba(47, 78, 78, 0.677);
 }
 
 .username {
@@ -179,7 +198,7 @@ h1 {
 @media only screen and (min-width: 768px) {
 
 
-  .main-nav {
+.main-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -213,6 +232,18 @@ hgroup {
 
 .card {
   width: 18vw;
+}
+
+hr {
+  display: none;
+}
+
+h2 {
+  align-self: flex-start;
+  margin-left: 9.4vw;
+  padding: 5px;
+  font-weight: 800;
+  font-size: 1.4rem;
 }
 
 }
